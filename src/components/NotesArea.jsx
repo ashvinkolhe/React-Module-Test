@@ -100,7 +100,7 @@ const NotesArea = (props) => {
               className={styles.TextInputMobile}
               value={note}
               onChange={handleChange}
-              placeholder="Enter your text here..."
+              placeholder="Enter your text here..........."
               onKeyDown={keypress}
             ></textarea>
             {error && <p className={styles.errorMessage}>{error}</p>}

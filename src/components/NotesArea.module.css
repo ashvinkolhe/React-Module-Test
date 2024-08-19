@@ -1,199 +1,255 @@
 /* General Styles */
+
+/* Header style for the notes section */
 .notesHeader {
-    height: 55px;
-    background: #001F8B;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .notesGroup {
-    margin-left: 10px;
-    width: 68px;
-    height: 68px;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 24px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-  }
-  
-  .groupName {
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
-    letter-spacing: 0.48px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    color: white;
-  }
-  
-  .NotesAndDate {
-    overflow-y: auto;
-    height: 60vh;
-    background-color: #DAE5F5;
-  }
-  
-  .note {
-    background-color: #FFFFFF; /* Background color */
-    border-radius: 5px; /* Border radius */
-    padding: 0px;
-    margin: 10px 20px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25); /* Shadow */
-    font-weight: 400;
-    -webkit-border-radius: 5px; /* Ensure border-radius is applied across browsers */
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-  }
-  
-  .DateAndText {
-    padding: 10px 20px;
-    background-color: white;
-    border-radius: 8px;
-    margin: 10px 20px;
-  }
-  
-  .Text {
-    margin-bottom: 10px; /* Space above date and time */
-    text-align: justify;
-    width: 100%; /* Ensure text takes the full width */
-  }
-  
-  .DateAndTime {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #000000;
-    font-family: Roboto, sans-serif;
-    font-size: 15px;
-    line-height: 1.3;
-    letter-spacing: 0.373px;
-    margin-left: 850px;
-  }
-  
-  .Date::after {
-    content: ' • ';
-    margin: 0 10px; /* Space around the ellipse */
-  }
-  
-  .Textarea {
-    margin: 15px;
-    margin-top: 1px;
-    background-color: #001F8B;
-    padding: 14px;
-  }
-  
-  .TextInput {
-    height: 18vh;
-    width: 70vw;
-    padding-left: 20px;
-    padding-top: 20px;
-    border-radius: 9px;
-    resize: none;
-    border: none;
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.596px;
-    color: #001F8B;
-    display: flex;
-  }
-  
-  .TextInput::placeholder {
-    color: #001F8B;
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.596px;
-  }
-  
-  .SendImg {
-    position: absolute;
-    bottom: 30px;
-    right: 40px;
-    cursor: pointer;
-  }
-  
-  .disabled {
-    opacity: 0.5;
-    pointer-events: none; /* Prevent clicking */
-  }
-  
-  /* Mobile-specific styles */
-  .DateAndTextMobile {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-  }
-  
-  .TextMobile {
-    margin-bottom: 10px;
-    text-align: justify;
-  }
-  
-  .DateAndTimeMobile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .DateMobile::after {
-    content: ' • ';
-    margin: 0 10px; /* Space around the ellipse */
-  }
-  
-  .DateMobile, .TimeMobile {
-    color: #353535;
-    font-family: Roboto, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 1.3;
-    letter-spacing: 0.373px;
-  }
-  
-  .SendImgMobile {
-    position: absolute;
-    right: 5%;
-    bottom: 2%;
-    cursor: pointer;
-  }
-  
-  .TextareaMobile {
-    margin: 10px;
-    margin-top: 15px;
-    background-color: #001F8B;
-  }
-  
-  .TextInputMobile {
-    height: 18vh;
-    width: 96%;
-    padding-left: 20px;
-    padding-top: 20px;
-    border-radius: 9px;
-    resize: none;
-    border: none;
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.596px;
-    color: #001F8B;
-  }
-  
-  .TextInputMobile::placeholder {
-    color: #001F8B;
-    font-family: Roboto, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.596px;
-  }
-  
+  height: 55px;
+  background: #001F8B; /* Dark blue background */
+  display: flex;
+  align-items: center; /* Vertically center align items */
+  padding: 20px;
+}
+
+/* Circle representing the notes group */
+.notesGroup {
+  margin-left: 10px;
+  width: 68px;
+  height: 68px;
+  color: #fff; /* Text color white */
+  border-radius: 50%; /* Makes it a circle */
+  font-size: 24px;
+  align-items: center;
+  display: flex;
+  justify-content: center; /* Center text horizontally */
+  background-color: #fff; /* Background color white */
+}
+
+/* Styling for the group name text */
+.groupName {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.48px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Notes and Date container with scrollable content */
+.NotesAndDate {
+  overflow-y: auto; /* Allows vertical scrolling */
+  height: 60vh;
+  background-color: #DAE5F5; /* Light blue background */
+}
+
+/* Individual note styling */
+.note {
+  background-color: #FFFFFF; /* White background */
+  border-radius: 5px; /* Rounded corners */
+  padding: 0px;
+  margin: 10px 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25); /* Shadow for depth */
+  font-weight: 400;
+  -webkit-border-radius: 5px; /* Compatibility for older browsers */
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* Container for date and text in the note */
+.DateAndText {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 10px 20px;
+}
+
+/* Text styling within the note */
+.Text {
+  margin-bottom: 10px; /* Space below the text */
+  text-align: justify;
+  width: 100%; /* Full width of the container */
+}
+
+/* Date and time display styling */
+.DateAndTime {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #000000;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: 0.373px;
+  margin-left: 850px;
+}
+
+/* Adds a dot between date and time */
+.Date::after {
+  content: ' • ';
+  margin: 0 10px; /* Space around the dot */
+}
+
+/* Textarea container styling */
+.Textarea {
+  width: 100%; /* Full width of the parent */
+  background-color: #001F8B; /* Dark blue background */
+  padding: 14px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Input field styling */
+.TextInput {
+  width: 70vw; /* 70% of the viewport width */
+  height: 18.6vh; 
+  padding-left: 60px;
+  padding-top: 20px;
+  border-radius: 9px;
+  resize: none; /* Disable resizing */
+  border: none; /* No border */
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.596px;
+  color: #001F8B; /* Dark blue text color */
+  background-color: #fff; /* White background for input */
+}
+
+/* Placeholder text styling */
+.TextInput::placeholder {
+  color: #9A9A9A; /* Light gray placeholder */
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.596px;
+}
+
+/* Send button image styling */
+.SendImg {
+  position: absolute;
+  bottom: 40px;
+  right: 35px;
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Disabled state styling */
+.disabled {
+  opacity: 0.5; /* Makes the element semi-transparent */
+  pointer-events: none; /* Prevents interaction */
+}
+
+/* Mobile-specific styles */
+
+/* Container for date and text on mobile */
+.DateAndTextMobile {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 10px;
+}
+
+/* Container for the entire note-taking area */
+.NotesAndDateMobile {
+  height: calc(100vh - 100px); /* Adjust height to leave space for the fixed input area */
+  overflow-y: auto; /* Allow scrolling for the list of notes */
+  background-color: #DAE5F5;
+  padding-top: 10px;
+}
+
+/* Container for date and text on mobile */
+.DateAndTextMobile {
+  display: flex;
+  flex-direction: row; /* Ensure items are in one line */
+  align-items: center; /* Vertically center the text, date, and time */
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 10px;
+  overflow-y: auto;
+}
+
+/* Text styling for mobile */
+.TextMobile {
+  flex-grow: 1; /* Allows the text to take up the remaining space */
+  margin-right: 10px; /* Space between text and date/time */
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+  max-height: 100px; /* Set max height to control when scrolling starts */
+  overflow-y: auto; /* Enable vertical scrolling if text overflows */
+  z-index: 1;
+}
+
+/* Date and time container for mobile */
+.DateAndTimeMobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap; /* Prevent the date and time from wrapping */
+}
+
+/* Adds a dot between date and time on mobile */
+.DateMobile::after {
+  content: ' • ';
+  margin: 0 10px; /* Space around the dot */
+}
+
+/* Date and time text styling on mobile */
+.DateMobile, .TimeMobile {
+  color: #353535; /* Dark gray text */
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.3;
+  letter-spacing: 0.373px;
+}
+
+/* Fixed text input area */
+.TextareaMobile {
+  position: fixed; /* Fix the text input to the bottom of the viewport */
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  background-color: #001F8B;
+  padding: 10px;
+  z-index: 10; /* Ensure it's above other content */
+}
+
+/* Styling for the text input */
+.TextInputMobile {
+  width: 96%;
+  height: 10vh;
+  padding: 5px;
+  border-radius: 8px;
+  resize: none;
+  border: none;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.596px;
+  color: #001F8B; /* Text color inside the textarea */
+}
+
+.TextInputMobile::placeholder {
+  color: #001F8B;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.596px;
+}
+
+/* Send button image styling on mobile */
+.SendImgMobile {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 4; /* Ensures send button is on top */
+}

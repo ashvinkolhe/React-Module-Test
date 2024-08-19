@@ -130,7 +130,8 @@
   }
   
   .modalContainerMobile {
-    width: 590px;
+    margin: 20px;
+    width: 0px;
     height: fit-content;
     max-width: 590px;
     min-width: 300px;
@@ -166,9 +167,9 @@
   } */
   .modalCreateMobile {
     width: 154px;
-    height: 38px;
+    height: 40px;
     float: right;
-    background: #000;
+    background: #16008B;
     border-radius: 11px;
     color: #fff;
     font-family: Roboto;

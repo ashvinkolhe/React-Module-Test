@@ -17,8 +17,8 @@
     letter-spacing: 0.63px;
     position: sticky;
     top: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     display: flex; /* Use Flexbox to center the content */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
@@ -58,6 +58,7 @@
   }
   
   .groupIcon {
+    margin: 12px;
     margin-left: 10px;
     width: 68px;
     height: 68px;
@@ -73,7 +74,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .groupItem.selected {
     border-radius: 22px 0px 0px 22px;
@@ -146,8 +147,23 @@
   }
   
   .CreateButtonMobile {
-    height: 41px;
-    width: inherit;
+
+    width: 50px; 
+    border-radius: 50%; 
+    cursor: pointer;
+    color: #fff;
+    background-color: #16008B;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: bold;
+    font-weight: 500;
+    line-height: 50px; 
+    text-align: center; 
+    letter-spacing: 0.54px;
+    position: fixed; 
+
+    height: 50px;
+    /* width: inherit; */
     border-radius: 50px;
     cursor: pointer;
     color: #fff;
@@ -161,6 +177,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    bottom: 180px;
+    right: 60px;
   }
   
   .headingMobile {
@@ -172,6 +190,10 @@
     font-weight: bold;
     line-height: normal;
     letter-spacing: 0.63px;
+    display: flex; /* Use Flexbox to center the content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center; /* Center text */
   }
   
   ::-webkit-scrollbar {
